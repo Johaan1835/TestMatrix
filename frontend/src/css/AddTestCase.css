@@ -1,0 +1,115 @@
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px;
+  background: #ffffff;
+  border-left: 6px solid #3a3a3a;
+  box-sizing: border-box;
+}
+
+.form-container {
+  flex-grow: 1;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.form-input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.submit-button, .cancel-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #444;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #999;
+  color: white;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.popup {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffdddd;
+  color: #a40000;
+  border: 1px solid #a40000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  z-index: 9999;
+  text-align: center;
+  max-width: 600px;
+}
+
+.popup-success {
+  background-color: #ddffdd;
+  color: #006400;
+  border-color: #006400;
+}
+
+.suite-list {
+  list-style: none;
+  padding: 0;
+}
+
+.suite-item {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}

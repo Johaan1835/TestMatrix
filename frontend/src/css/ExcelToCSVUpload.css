@@ -1,0 +1,18 @@
+/* ExcelUpload.css */
+.excel-upload-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #007BFF; /* Bootstrap primary blue */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.excel-upload-button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}

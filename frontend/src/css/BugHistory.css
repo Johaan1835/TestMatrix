@@ -1,0 +1,95 @@
+.bug-history-container {
+  padding: 40px;
+  background-color: #f9f9f9; /* Light white shade */
+  color: #111111; /* Dark text for contrast */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bug-history-container h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222222;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 10px;
+}
+
+.bug-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; /* White table background */
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.bug-history-table th,
+.bug-history-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.bug-history-table th {
+  background-color: #f0f0f0;
+  color: #333333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.bug-history-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.linked-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.testcase-link {
+  color: #0077cc; /* Blue link for light background */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.testcase-link:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+.plan-name {
+  color: #666666;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.status-dropdown {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: #ffffff; 
+  color: #111111;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  outline: none;
+  min-width: 140px;
+  max-width: 200px;
+}
+
+.status-dropdown:hover {
+  border-color: #0077cc;
+}
+
+.status-dropdown:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 4px rgba(0, 119, 204, 0.3);
+}
+
+.status-dropdown:disabled {
+  background-color: #f0f0f0;
+  color: #888;
+  cursor: not-allowed;
+  border-color: #ccc;
+}

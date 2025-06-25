@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #000; /* black background for page */
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #fff; /* white form container */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: #e0e0e0;  /* light gray */
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  color: #000; /* black text */
+  transition: 0.3s;
+}
+
+.tab-buttons button.active {
+  background: #000; /* black active tab */
+  color: #fff; /* white text */
+}
+
+.tab-buttons button:hover {
+  background: #333; /* dark gray hover */
+  color: #fff;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000; /* black heading */
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* light gray border */
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff; /* white input background */
+  color: #000; /* black input text */
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #000; /* black border on focus */
+}
+
+.login-form button {
+  padding: 10px;
+  background: #252525; /* black button */
+  color: #fff; /* white text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background: #000; /* dark gray hover */
+}
+
+/* Validation error message */
+.error-message {
+  color: #cc0000; /* dark red errors */
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}

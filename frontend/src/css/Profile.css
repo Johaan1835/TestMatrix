@@ -1,0 +1,236 @@
+/* Profile Container */
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h2 {
+  color: #222; /* dark gray/black */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.profile-subtitle {
+  color: #666; /* medium gray */
+  font-size: 1rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-field label {
+  font-weight: 600;
+  color: #333; /* dark gray */
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-value {
+  padding: 0.8rem 1rem;
+  background-color: #f2f2f2; /* very light gray */
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222; /* dark text */
+}
+
+/* Buttons */
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-primary, .btn-secondary, .btn-outline {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  user-select: none;
+  /* Slight box shadow for subtle depth */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Primary button - dark gray background */
+.btn-primary {
+  background-color: #333;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Secondary button - light gray background with dark text */
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #444;
+  border: 1px solid #bbb;
+}
+
+.btn-secondary:hover {
+  background-color: #ccc;
+  transform: translateY(-2px);
+}
+
+/* Outline button - transparent with dark border */
+.btn-outline {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn-outline:hover {
+  background-color: #f2f2f2;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55); /* slightly darker */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.profile-container .modal-content {
+  background-color: #fff !important;
+  padding: 2rem !important;
+  border-radius: 12px !important;
+  width: 90% !important;
+  max-width: 450px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  animation: modalFadeIn 0.3s ease-out !important;
+  z-index: 1001 !important;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+  padding: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+  color: #222;
+}
+
+.modal-content h3 {
+  color: #222;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  color: #222;
+  background-color: #fafafa;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.1);
+  background-color: #fff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(-20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 1.5rem;
+  }
+  
+  .profile-actions, .form-actions {
+    flex-direction: column;
+  }
+  
+  .btn-primary, .btn-secondary, .btn-outline {
+    width: 100%;
+  }
+  
+  .modal-content {
+    padding: 1.5rem;
+  }
+}

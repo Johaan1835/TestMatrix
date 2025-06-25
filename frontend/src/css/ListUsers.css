@@ -1,0 +1,216 @@
+/* General container styling */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Table styling */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-table th, .user-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.user-table th {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.user-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Checkbox alignment */
+.user-table input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px; /* slightly rounded */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit Button - brighter blue */
+.edit-btn {
+  background-color: #333;  /* bright blue */
+  color: white;
+  border-radius: 8px;
+}
+
+.edit-btn:hover {
+  background-color: #000;  /* darker blue */
+}
+
+/* Delete Button - bright red */
+.delete-btn {
+  margin: 3px 0;
+  background-color: #ef2e2e;;  /* dark crimson red */
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c11f1f;  /* deeper maroon red */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* Modal Container */
+.custom-modal {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 450px;
+  max-width: 90vw;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1001;
+  animation: slideIn 0.3s ease forwards;
+}
+
+/* Modal Header */
+.custom-modal h3 {
+  margin: 0 0 25px 0;
+  color: #000000;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+/* Form Elements */
+.custom-modal input,
+.custom-modal select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease;
+}
+
+.custom-modal input:focus,
+.custom-modal select:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Buttons Container */
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+/* Modal Buttons */
+.modal-actions button {
+  flex: 1;
+  padding: 14px;  /* slightly bigger padding for modal buttons */
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 12px; /* consistent rounded corners */
+  transition: all 0.3s ease;
+}
+
+.update-btn {
+  background-color: #0ca143;  /* dark emerald green - rich but not dull */
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+  background-color: #166534;  /* slightly darker forest green */
+  transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+
+.cancel-btn:hover {
+  background-color: #f2f2f2;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-modal {
+    padding: 25px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .custom-modal h3 {
+    font-size: 1.3rem;
+  }
+}

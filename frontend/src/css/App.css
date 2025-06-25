@@ -1,0 +1,18 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+}
+
+/* Adjust left margin based on sidebar width */
+.main-content {
+  flex-grow: 1;
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is collapsed */
+.sidebar.collapsed ~ .main-content {
+  margin-left: 60px;
+}

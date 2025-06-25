@@ -1,0 +1,46 @@
+{
+  "name": "test-management-backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Backend for Test Management Application",
+  "main": "server.jsx",
+  "type": "module",
+  "scripts": {
+    "start": "node server.jsx",
+    "dev": "nodemon server.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "email": "email dev --dir ./src/emails"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/register": "^7.27.1",
+    "@react-email/components": "^0.0.41",
+    "@react-email/render": "^1.1.2",
+    "@xenova/transformers": "^2.17.2",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.5.0",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^5.3.0",
+    "pg": "^8.16.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^2.15.3",
+    "resend": "^4.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.3",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "nodemon": "^3.1.10",
+    "react-email": "4.0.15"
+  }
+}
