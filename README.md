@@ -14,16 +14,8 @@ TestMatrix is a web-based Test Case Management Tool designed to help QA teams ef
 - Secure JWT-based authentication
 - Frontend: React + Vite  
 - Backend: Node.js + Express + PostgreSQL
-
----
-
-## 📦 Folder Structure
-
-project/
-├── frontend/ # React + Vite frontend
-├── backend/ # Express + Node.js backend
-├── db/ # SQL init scripts for PostgreSQL
-├── .gitignore
+  
+--------------------------------------------------------------
 
 ⚙️ Setup Instructions
 
